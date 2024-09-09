@@ -160,3 +160,20 @@ footer {
   .contact-info a:hover {
     text-decoration: underline;
   }
+table{
+    border:2px solid palevioletred;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+th{
+border:1px solid palevioletred;
+    text-align: center;
+   padding: 8px;
+    background-color: #e6b7be;
+}
+td{
+    border:1px solid palevioletred;
+    text-align: left;
+    padding: 5px;
+}
+
