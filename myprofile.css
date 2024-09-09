@@ -23,10 +23,15 @@ article{
 
 /* Menu Styles */
 nav {
-    background-color: rgb(230, 183, 190);
+    background-color: #e6b7be;
     padding: 10px ;
     display: flex;
     justify-content: space-between;
+    position:fixed ;
+    top:0%;
+    width: 100%;
+    z-index: 1000; /* Define uma camada mais alta para o menu */
+    
 }
 
 nav ul {
@@ -58,7 +63,7 @@ nav ul li ul {
     position: absolute;
     top: 40px;
     left: 0;
-    background-color: lightpink;
+    background-color: #ffb6c1;
     border-radius: 5px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     min-width: 55px;
@@ -103,6 +108,55 @@ nav ul li:hover ul {
 }
 
 .active{
-    background-color: darksalmon;
+    background-color: #e9967a;
     border-radius: 5px;
 }
+
+h1{
+    margin-top: 80px;
+}
+
+
+footer {
+    background-color: #93837D;
+    color: #fff;
+    padding: 6px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .icons {
+    margin: 10px 0;
+  }
+  
+  .icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .icons a:hover {
+    color: #1da1f2; /* Cor de hover para os ícones */
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-info a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
