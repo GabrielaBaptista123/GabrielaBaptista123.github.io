@@ -108,14 +108,42 @@ nav ul li:hover ul {
 }
 
 .active{
-    background-color: #e9967a;
+    background-color:darksalmon;
     border-radius: 5px;
 }
 
 h1{
     margin-top: 80px;
+    text-align: center;
 }
-
+h3{
+    margin-left: 30px;
+}
+.title-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .animated-title {
+    display: inline-block;
+    font-size: 3em;
+    color: #D66D69;
+    position: relative;
+    
+  }
+  
+  @keyframes rotateUp {
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    50% {
+      transform: rotate(10deg) translateY(-10px);
+    }
+    100% {
+      transform: rotate(0deg) translateY(0);
+    }
+  }
 
 footer {
     background-color: #93837D;
@@ -140,12 +168,12 @@ footer {
   
   .icons a {
     margin: 0 10px;
-    color: #fff;
+    color: darksalmon;
     text-decoration: none;
   }
   
   .icons a:hover {
-    color: #1da1f2; /* Cor de hover para os ícones */
+    color: darksalmon; /* Cor de hover para os ícones */
   }
   
   .contact-info p {
@@ -153,7 +181,7 @@ footer {
   }
   
   .contact-info a {
-    color: #fff;
+    color: white;
     text-decoration: none;
   }
   
@@ -168,12 +196,152 @@ table{
 th{
 border:1px solid palevioletred;
     text-align: center;
-   padding: 8px;
-    background-color: #e6b7be;
+    padding: 8px;
+    background-color: pink;
 }
 td{
     border:1px solid palevioletred;
     text-align: left;
     padding: 5px;
+
 }
 
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 45%; /* Adjust the width for two columns */
+    padding: 8px;
+    text-align: left;
+    margin: 0 auto; /* Center the content */
+    background-color: #e6b7bedc;
+    border-radius: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Center the row */
+.row {
+    display: flex;
+    justify-content: center;
+}
+/* Align the list to the left */
+.list {
+    margin: 10px;
+    text-align: left;
+    margin-right: 20px; /* Add space between the list and the image */
+}
+
+.list li {
+    padding: 3px 0; /* Add space between list items */
+}
+.aboutme {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the top */
+}
+.violin {
+    size-adjust: 60%;
+    text-align: right;
+}
+.arrows-container {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .arrow {
+    width: 60px;
+    height: 60px;
+    color:#ffb6c1; /* Light pink color */
+    margin: 10px;
+    stroke-width: 2.5;
+    fill: none;
+    animation: bounce-scale-glow 2s infinite ease-in-out; /* Common animation */
+  }
+  
+  /* Rotate the left and right arrows */
+  .left-arrow {
+    transform-origin: center; /* Ensures rotation around the center */
+    animation: bounce-scale-glow-left 2s infinite ease-in-out;
+  }
+  
+  .right-arrow {
+    transform-origin: center; /* Ensures rotation around the center */
+    animation: bounce-scale-glow-right 2s infinite ease-in-out;
+  }
+  
+  /* Custom animation for the center arrow */
+  .center-arrow {
+    animation: bounce-scale-glow 2s infinite ease-in-out;
+  }
+  
+  /* Keyframes for the center arrow */
+  @keyframes bounce-scale-glow {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      filter: brightness(1);
+    }
+    25% {
+      transform: translateY(-10px) scale(1.1);
+      filter: brightness(1.2);
+    }
+    50% {
+      transform: translateY(0) scale(1.2);
+      filter: brightness(1.5);
+    }
+    75% {
+      transform: translateY(-5px) scale(1.05);
+      filter: brightness(1.2);
+    }
+  }
+  
+  /* Keyframes for the left arrow with rotation */
+  @keyframes bounce-scale-glow-left {
+    0%, 100% {
+      transform: translateY(0) scale(1) rotate(-20deg); /* Tilt to the right */
+      filter: brightness(1);
+    }
+    25% {
+      transform: translateY(-10px) scale(1.1) rotate(-20deg);
+      filter: brightness(1.2);
+    }
+    50% {
+      transform: translateY(0) scale(1.2) rotate(-20deg);
+      filter: brightness(1.5);
+    }
+    75% {
+      transform: translateY(-5px) scale(1.05) rotate(-20deg);
+      filter: brightness(1.2);
+    }
+  }
+  
+  /* Keyframes for the right arrow with rotation */
+  @keyframes bounce-scale-glow-right {
+    0%, 100% {
+      transform: translateY(0) scale(1) rotate(20deg); /* Tilt to the left */
+      filter: brightness(1);
+    }
+    25% {
+      transform: translateY(-10px) scale(1.1) rotate(20deg);
+      filter: brightness(1.2);
+    }
+    50% {
+      transform: translateY(0) scale(1.2) rotate(20deg);
+      filter: brightness(1.5);
+    }
+    75% {
+      transform: translateY(-5px) scale(1.05) rotate(20deg);
+      filter: brightness(1.2);
+    }
+  }
+  
+  .arrow:hover {
+    transform: scale(1.3);
+    filter: brightness(1.8);
+  }
+  

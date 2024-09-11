@@ -26,46 +26,50 @@
     </ul>
   </nav>
   <main>
-    <h1>Hi, I'm Gabriela Baptista!!</h1>
-
+      <h1>Hi, I'm Gabi!!!</h1>
     <img src="img/me1.png" class="center" alt="img_gabi" width="400px" height="auto" />
-
-    <p>What is Lorem Ipsum?
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-      of Lorem Ipsum.
-
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-      its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-      opposed to using 'Content here, content here', making it look like readable English. publishing
-
+    <br>
+<div class="row">
+  <div class="column">
+    <p>I'm 18 years old, I'm Portuguese and music has been an essential part of my life from a very young age. I started playing violin when I was 3 years old, and my passion for music has only grown since then. During high school, I completed a Multimedia course, and that’s when I discovered my love for technology. The combination of creativity, interactivity and innovation has always fascinated me, and since then, I have been exploring different areas of technology. 
     </p>
-
+  </div>
+  <div class="column">
+    <p>This year, I had the opportunity to do a 3 months Erasmus in Prague, Czech Republic, where I worked at a 3D and Virtual Reality company. It was an amazing experience that allowed me to learn and grow both personally and professionally. Also, this year, I have traveled to more than 9 countries, either alone or with friends, and I love discovering new cultures, trying new things, and learning whenever I can.
+    </p> 
+  </div>
+</div>
+<br>
+<div class="aboutme"></div>
+<h3>About me:</h3>
+    <ul class="list">
+      <li>I am creative and curious </li>
+      <li>I am adventurous and resourceful </li>
+      <li>I am passionate about new cultures and experiences </li>
+      <li>I love my family, especially my sister and my cat violeta  </li>
+      <li>I enjoy cooking, reading, watching series and spending time with my friends </li>
+    </ul>
+    <img src="img/violin.png" class="violin" alt="img_gabi" width="400px" height="auto" />
+<h1>Check my creative CV</h1>
+    <div class="arrows-container">
+      <svg class="arrow left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19l-7-7m7 7V5m0 14l7-7"></path>
+      </svg>
+      <svg class="arrow center-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19l-7-7m7 7V5m0 14l7-7"></path>
+      </svg>
+      <svg class="arrow right-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19l-7-7m7 7V5m0 14l7-7"></path>
+      </svg>
+    </div>
+    
+    
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/eXXaEdjqS7c?si=rew7kZVIKwBIwkFm"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <p>What is Lorem Ipsum?
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-      of Lorem Ipsum.
-
-
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-      its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-      opposed to using 'Content here, content here', making it look like readable English. publishing
-
-    </p>
   </main>
 </body>
 <footer>
@@ -85,5 +89,15 @@
     </div>
   </div>
 </footer>
-
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const arrows = document.querySelectorAll('.arrow');
+    
+    setTimeout(() => {
+      arrows.forEach(arrow => {
+        arrow.style.opacity = "1";
+      });
+    }, 500); // 0.5 second delay before the arrows appear
+  });
+</script>
 </html>
