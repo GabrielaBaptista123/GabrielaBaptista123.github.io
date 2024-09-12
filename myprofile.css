@@ -13,6 +13,7 @@ body {
     background-position: left;
     
 }
+
 article{
     background-color: blue;
     background-position: left;
@@ -130,7 +131,6 @@ h3{
     font-size: 3em;
     color: #D66D69;
     position: relative;
-    
   }
   
   @keyframes rotateUp {
@@ -191,7 +191,7 @@ footer {
 table{
     border:2px solid palevioletred;
     border-collapse: collapse;
-    margin-left: 20px;
+    margin-left: 380px;
 }
 th{
 border:1px solid palevioletred;
@@ -216,6 +216,14 @@ td{
     background-color: #e6b7bedc;
     border-radius: 15px;
 }
+.column2{
+    float: left;
+    width: 45%; /* Adjust the width for two columns */
+    padding: 8px;
+    text-align: center;
+    margin: 0 auto; /* Center the content */
+
+}
 
 /* Clear floats after the columns */
 .row::after {
@@ -235,7 +243,17 @@ td{
     text-align: left;
     margin-right: 20px; /* Add space between the list and the image */
 }
-
+.list2{
+    margin: 100px;
+    text-align: left;
+    margin-right: 20px;
+}
+.titlewhy{
+  margin-bottom: -80px;
+  margin-top: 50px;
+  margin-left: 125px;
+  color:#e6b7be;
+}
 .list li {
     padding: 3px 0; /* Add space between list items */
 }
