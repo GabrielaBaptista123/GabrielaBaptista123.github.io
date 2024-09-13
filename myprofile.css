@@ -191,7 +191,7 @@ footer {
 table{
     border:2px solid palevioletred;
     border-collapse: collapse;
-    margin-left: 380px;
+    margin-left: 510px;
 }
 th{
 border:1px solid palevioletred;
@@ -370,4 +370,37 @@ text-align: left;
 .img2{
     text-align: right;
       }
+.accordion{
+margin-top: 80px;
+margin-bottom: 190px;
+}
+
+.blog-feed {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.post-excerpt {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.post-excerpt h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.post-excerpt p {
+  font-size: 16px;
+  color: #555;
+}
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #007BFF;
+  text-decoration: none;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
   
