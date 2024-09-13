@@ -376,10 +376,12 @@ margin-bottom: 190px;
 }
 
 .blog-feed {
+  
   max-width: 800px;
   margin: 0 auto;
 }
 .post-excerpt {
+  background-color:#e6b7be;
   border: 1px solid #ccc;
   padding: 15px;
   margin-bottom: 20px;
@@ -403,4 +405,29 @@ margin-bottom: 190px;
 .read-more:hover {
   text-decoration: underline;
 }
-  
+aside {
+  margin-bottom: 180px;
+  width: 250px;
+  background-color:#e6b7be;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+aside ul li {
+  margin-bottom: 10px;
+}
+aside ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: pink;
+  transition: background-color 0.3s ease;
+}
+aside ul li a:hover {
+  background-color:pink;
+}  
